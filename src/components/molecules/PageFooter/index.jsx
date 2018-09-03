@@ -4,7 +4,7 @@ import Copyright from '../Copyright';
 const PageFooter = () => (
   <footer>
     <Copyright />
-    <div>
+    <small>
       Icons made by
       {' '}
       <a
@@ -21,7 +21,7 @@ const PageFooter = () => (
         title="Flaticon">www.flaticon.com
       </a>
       {' '}
-      is licensed by
+      are licensed by
       {' '}
       <a
         href="http://creativecommons.org/licenses/by/3.0/"
@@ -29,7 +29,7 @@ const PageFooter = () => (
       >
         CC 3.0 BY
       </a>
-    </div>
+    </small>
   </footer>
 );
 

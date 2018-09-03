@@ -15,11 +15,11 @@ export const initialEntriesState = fromJS({
 const updateEntries = (entries, newEntries) => {
   return newEntries.reduce((updatedEntries, newEntry) => {
     const immutableNewEntry = fromJS(newEntry);
-    const exisitngIndex = entries.findIndex(entry => entry.get('id') === newEntry.id);
+    const exisitngIndex = updatedEntries.findIndex(entry => entry.getIn(['sys', 'id']) === newEntry.sys.id);
     if (exisitngIndex > -1) {
-      return entries.update(exisitngIndex, () => immutableNewEntry);
+      return updatedEntries.update(exisitngIndex, () => immutableNewEntry);
     } else {
-      return entries.push(immutableNewEntry);
+      return updatedEntries.push(immutableNewEntry);
     }
   }, entries);
 }
