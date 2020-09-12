@@ -13,7 +13,7 @@ const PageLayout = styled.div`
   min-height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  padding: 1rem;
+  padding: 2rem;
 
   ${PageMainContent} {
     flex-grow: 1;
