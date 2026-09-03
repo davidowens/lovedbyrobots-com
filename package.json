@@ -9,7 +9,7 @@
     "connected-react-router": "^4.4.1",
     "contentful": "^7.0.3",
     "date-fns": "^1.29.0",
-    "immutable": "^4.0.0-rc.9",
+    "immutable": "^4.3.9",
     "ramda": "^0.25.0",
     "re-reselect": "^2.1.0",
     "react": "^16.4.2",
